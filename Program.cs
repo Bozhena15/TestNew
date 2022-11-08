@@ -95,6 +95,11 @@ Console.WriteLine("-------------------------------------------------------------
 XmlTextReader reader = new XmlTextReader("Cars.xml");
 reader.WhitespaceHandling = WhitespaceHandling.None;
 
+using (StreamWriter stream = new StreamWriter("new.txt", true))
+{
+    stream.WriteLine("Hi!");
+}
+
 while(reader.Read())
 {
     Console.WriteLine($"Type: {reader.NodeType}\t Name: {reader.Name}\t Value: {reader.Value}");
