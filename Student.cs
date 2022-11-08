@@ -1,4 +1,7 @@
 ﻿namespace ConsoleSt;
+
+enum Color { Red, Yellow, Black }
+
 /// <summary>
 /// Model of <c>Student</c>
 /// </summary>
