@@ -53,6 +53,16 @@ finally
 
 XmlDocument document = new XmlDocument();
 document.Load("Cars.xml");
+Console.WriteLine("my new string");
+if (true)
+{
+
+
+}
+else
+{
+
+}
 
 XmlNode root = document.DocumentElement;
 
