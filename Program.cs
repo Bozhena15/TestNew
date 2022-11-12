@@ -95,6 +95,9 @@ Console.WriteLine("-------------------------------------------------------------
 XmlTextReader reader = new XmlTextReader("Cars.xml");
 reader.WhitespaceHandling = WhitespaceHandling.None;
 
+List<int> ints = new List<int>();
+ints.AddRange(new int[] { 1, 2, 4, 4, 5, 5, 23, 3, 2, 3, 23, 23, 2, 3, 23 });
+
 using (StreamWriter stream = new StreamWriter("new.txt", true))
 {
     stream.WriteLine("Hi!");
